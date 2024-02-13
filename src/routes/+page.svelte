@@ -10,10 +10,9 @@
 
 <section>
 	<h1>
-		Shinrin-Yoku <br />Forest bathing 
+		Shinrin-Yoku
 		<span class="image">
-			<picture>
-		
+			<picture>		
 				<img src={image} alt="Welcome" />
 			</picture>
 		</span>
