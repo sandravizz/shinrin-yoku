@@ -1,38 +1,10 @@
-# create-svelte
+# Shinrin-yoku
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+In this project I combine two things on the one hand I want to create a simple webpage using Svelte and on the other hand as I'm offering Shinrin-yoku in Lisbon, where I live it would be nice to offer some background information for my participants. 
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+##
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Made with :green_heart:  by [sandraviz](https://www.sandraviz.com/)
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Follow me: [twitter](https://twitter.com/SandraCrypto), [vis.social](https://vis.social/@sb_42), [linkedin](https://www.linkedin.com/in/sandradataviz/) and  [youtube](https://www.youtube.com/@sandraviz3403)
