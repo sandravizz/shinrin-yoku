@@ -1,6 +1,6 @@
 # Shinrin-yoku
 
-In this project I combine two things on the one hand I want to create a simple webpage using Svelte and on the other hand as I'm offering Shinrin-yoku in Lisbon, where I live it would be nice to offer some background information for my participants. 
+In this project I combine two things on the one hand I want to create a simple webpage using Svelte and on the other hand as I'm offering Shinrin-yoku in Lisbon which needs a webpage. 
 
 ![!\[Alt text\](static/1.jpeg)](src/lib/images/1.jpeg)
 
