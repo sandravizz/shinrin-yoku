@@ -8,8 +8,10 @@
 </svelte:head>
 
 <section>
-	<h1>Shinrin-Yoku
-	</h1>
+	<h1>Shinrin-yoku</h1>
+	<h2>森林浴 (forest bath)</h2>
+	<h3>Mindfullness meets nature in Lisbon</h3>
+		
 </section>
 
 <style>

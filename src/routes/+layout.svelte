@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://www.sandraviz.com/">sandraviz</a> </p>
+		<p>want to join <a href="https://www.meetup.com/lx-urban-gardening/">Lx urban gardening</a> and sign up for the next event</p>
 	</footer>
 </div>
 
