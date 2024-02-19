@@ -2,11 +2,6 @@
 
 In this project I combine two things on the one hand I want to create a simple webpage using Svelte and on the other hand as I'm offering Shinrin-yoku in Lisbon which needs a webpage. 
 
-![!\[Alt text\](static/1.jpeg)](src/lib/images/1.jpeg)
-
-
-##
-
 Made with :green_heart:  by [sandraviz](https://www.sandraviz.com/)
 
 Follow me: [twitter](https://twitter.com/SandraCrypto), [vis.social](https://vis.social/@sb_42), [linkedin](https://www.linkedin.com/in/sandradataviz/) and  [youtube](https://www.youtube.com/@sandraviz3403)
