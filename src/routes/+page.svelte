@@ -1,5 +1,4 @@
 <script>
-
 </script>
 
 <svelte:head>
@@ -8,10 +7,10 @@
 </svelte:head>
 
 <section>
-	<h1>Shinrin-yoku</h1>
-	<h2>森林浴 (forest bath)</h2>
-	<h3>Mindfullness meets nature in Lisbon</h3>
-		
+	<div style="background-image: url(1.JPG);">
+	<h1>SHINRIN-YOKU 森林浴</h1>
+	<h2>Mindfullness meets nature in Lisbon</h2>
+	</div>
 </section>
 
 <style>
@@ -22,9 +21,4 @@
 		align-items: center;
 		flex: 0.6;
 	}
-
-	h1 {
-		width: 100%;
-	}
-
 </style>
