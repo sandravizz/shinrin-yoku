@@ -23,7 +23,7 @@
 				<a href="/about">About</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Events</a>
+				<a href="/events">Events</a>
 			</li>
 		</ul>
 
@@ -69,7 +69,7 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: white;
+		--background: #CAD959;
 	}
 
 	svg {
