@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<p>want to join <a href="https://www.meetup.com/lx-urban-gardening/">Lx urban gardening</a> and sign up for the next event</p>
+		<p>want to join <a href="https://www.meetup.com/lx-urban-gardening/">the community.</a></p>
 	</footer>
 </div>
 
@@ -39,6 +39,7 @@
 		justify-content: center;
 		align-items: center;
 		padding: 12px;
+		font-size: 12px;
 	}
 
 	footer a {

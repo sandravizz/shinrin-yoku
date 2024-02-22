@@ -18,10 +18,4 @@
 
 <style>
 
-h4 {
-	font-size: 1rem;
-	text-align: left;
-}
-
-
 </style>
