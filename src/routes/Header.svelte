@@ -4,16 +4,12 @@
 </script>
 
 <header>
-	<div class="corner">
-
-	</div>
+	<div class="corner"></div>
 
 	<nav>
-		<!-- Whats that about? What is aria-hidden? -->
 		<svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg> 
-
 	
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
