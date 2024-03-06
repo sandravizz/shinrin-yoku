@@ -11,6 +11,7 @@
 			[...document.querySelectorAll('.content-wrap')].forEach(element => {
 					new Item(element);
 			});
+			
 	})
 </script>
 
@@ -19,21 +20,10 @@
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About this app" />
-
-	<link rel="stylesheet" href="https://use.typekit.net/qsy7khk.css">
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-	<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-	<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
-	<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
 </svelte:head>
-
 
 <body class="loading">
 	
-
-	<main>
-
 		<div class="intro"> 
 			<h1 class="intro__title"> 
 				<span class="intro__title-pre">Vocabulary</span> 
@@ -69,8 +59,6 @@
 
 		</div>
 
-	</main>
-
 	</body>
 	<!-- <p>
 		This is a webpage in which I give some inforamtion about the forest baths I do in Lisbon.  
@@ -93,17 +81,6 @@
 	--color-link: rgba(255,255,255,0.5);
 	--color-link-hover: #fff;
 	--color-title: #e93f33;
-}
-
-body {
-	margin: 0;
-	color: var(--color-text);
-	background-color: var(--color-bg);
-	font-family: "tenon", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	margin-bottom: 50vh;
-	overflow-x: hidden;
 }
 
 /******************+ Page Loader *************************/
@@ -206,7 +183,7 @@ body #cdawrap {
 }
 
 .intro__title-pre {
-	font-family: "stinger-variable", sans-serif;
+	font-family: var(--font-body);
 	font-variation-settings: "wdth" 140, "wght" 300;
 	font-weight: 300;
     font-size: clamp(2rem,10vw,5rem);
