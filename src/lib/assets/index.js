@@ -1,5 +1,10 @@
-// import ScrollTrigger from ""
-// import Lenis from ""
+import { gsap } from "gsap";
+import {Flip} from "gsap/dist/Flip";
+import {ScrollTrigger} from "gsap/dist/ScrollTrigger";
+
+import Lenis from '@studio-freight/lenis'
+
+gsap.registerPlugin(Flip,ScrollTrigger);
 
 // Define a variable to store Lenis smooth scrolling object
 let lenis;

@@ -1,24 +1,17 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import image from '$lib/assets/1.jpg';
+	import aboutImage from '$lib/assets/aboutImage.jpg';
 
-	import { preloadFonts } from '$lib/assets/utils.js';
 	import { Item } from '$lib/assets/item.js';
 	import {initSmoothScrolling} from '$lib/assets/index.js';
 
-	// onMount(() => {
-	// 	preloadFonts('qsy7khk')
-	// 	.then(() => {
-	// 		// Once fonts are loaded, remove the 'loading' class from the body, ending the loading state
-	// 		document.body.classList.remove('loading');
-	// 		// Initialize smooth scrolling
-	// 		initSmoothScrolling();
-	// 		// Select all elements with the class 'content-wrap', and for each, create a new instance of the Item class
-	// 		[...document.querySelectorAll('.content-wrap')].forEach(element => {
-	// 				new Item(element);
-	// 		});
-	// 	});
-	// })
+	onMount(() => {
+			document.body.classList.remove('loading');
+			initSmoothScrolling();
+			[...document.querySelectorAll('.content-wrap')].forEach(element => {
+					new Item(element);
+			});
+	})
 </script>
 
 
@@ -33,14 +26,6 @@
 	<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
 	<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
-
-	<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
-	<!-- Flip -->
-	<script src=".src/lib/assets/Flip.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.11/dist/lenis.min.js"></script>
-
 </svelte:head>
 
 
@@ -77,7 +62,7 @@
 					  <circle cx="50%" cy="50%" r="0" data-value-final="820" fill="white" class="mask" style="filter: url(#displacementFilter);" />
 					</mask>
 				  </defs>
-				  <image xlink:href={image} width="896" height="1344" mask="url(#circleMask)" />
+				  <image xlink:href={aboutImage} width="896" height="1344" mask="url(#circleMask)" />
 				</svg>
 				<p class="content__text">As darkness cloaked the forsaken city, the crew huddled together, their eyes darting nervously into the murky abyss.</p>
 			</div>

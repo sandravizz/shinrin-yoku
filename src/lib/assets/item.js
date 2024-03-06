@@ -1,5 +1,8 @@
-// import Flip from "$lib/assets/Flip.min.js"
-// import ScrollTriger from ""
+import { gsap } from "gsap";
+import {Flip} from "gsap/dist/Flip";
+import {ScrollTrigger} from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(Flip,ScrollTrigger);
 
 export class Item {
     // Initialize DOM and style related properties
