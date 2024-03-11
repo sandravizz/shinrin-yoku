@@ -1,4 +1,4 @@
-import { gsap } from "gsap";
+import {gsap } from "gsap";
 import {Flip} from "gsap/dist/Flip";
 import {ScrollTrigger} from "gsap/dist/ScrollTrigger";
 

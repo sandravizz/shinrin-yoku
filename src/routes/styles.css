@@ -35,14 +35,9 @@
 
 body {
 	min-height: 100vh;
-	margin: 0;
 	background-attachment: fixed;
 	background-color: var(--color-bg-1);
 	background-size: 100vw 100vh;
-}
-
-p {
-	line-height: 1.5;
 }
 
 a {
@@ -68,6 +63,11 @@ h2 {
 
 h3 {
 	font-size: var(--step-3);
+	text-align: center;
+}
+
+h4 {
+	font-size: var(--step-2);
 	text-align: center;
 }
  

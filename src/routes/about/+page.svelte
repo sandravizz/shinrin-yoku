@@ -1,33 +1,28 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import aboutImage from '$lib/assets/aboutImage.jpg';
-
 	import { Item } from '$lib/assets/item.js';
 	import {initSmoothScrolling} from '$lib/assets/index.js';
 
 	onMount(() => {
-			document.body.classList.remove('loading');
-			initSmoothScrolling();
-			[...document.querySelectorAll('.content-wrap')].forEach(element => {
-					new Item(element);
-			});
-			
+		document.body.classList.remove('loading');
+		initSmoothScrolling();
+		[...document.querySelectorAll('.content-wrap')]
+		.forEach(element => {new Item(element);});			
 	})
 </script>
-
-
 
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<body class="loading">
+<body>
 	
 		<div class="intro"> 
 			<h1 class="intro__title"> 
-				<span class="intro__title-pre">Vocabulary</span> 
-				<span class="intro__title-sub">What to look for in a forest bathing.</span> 
+				<h1 class="intro__title-pre">Vocabulary</h1> 
+				<h2 class="intro__title-sub">What to look for in a forest bathing.</h2> 
 			</h1> 
 			<span class="intro__info">Scroll down.</span> 
 		</div>
@@ -36,8 +31,8 @@
 
 			<div class="content">
 				<div class="title-wrap">
-					<span class="title title--up">Shinrin-yoku</span>
-					<span class="title title--down">blabla</span>
+					<h4 class="title title--up">Kachou</h4>
+					<h4 class="title title--down">fuugestu</h4>
 				</div>
 			</div>
 
@@ -60,106 +55,13 @@
 		</div>
 
 	</body>
-	<!-- <p>
-		This is a webpage in which I give some inforamtion about the forest baths I do in Lisbon.  
-		<br> Check out the <a href="https://www.meetup.com/lx-urban-gardening/">Meetup</a>.
-		
-	</p> -->
 
 <style>
-	*,
+
+*,
 *::after,
 *::before {
 	box-sizing: border-box;
-}
-
-:root {
-	font-size: 16px;
-	--color-text: #fff;
-	--color-bg: #000;
-	--color-bg-alt: hsl(15deg 55% 6%);
-	--color-link: rgba(255,255,255,0.5);
-	--color-link-hover: #fff;
-	--color-title: #e93f33;
-}
-
-/******************+ Page Loader *************************/
-.js .loading::before,
-.js .loading::after {
-	content: '';
-	position: fixed;
-	z-index: 1000;
-}
-
-.js .loading::before {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: var(--color-bg);
-}
-
-.js .loading::after {
-	top: 50%;
-	left: 50%;
-	width: 60px;
-	height: 60px;
-	margin: -30px 0 0 -30px;
-	border-radius: 50%;
-	opacity: 0.4;
-	background: var(--color-link);
-	animation: loaderAnim 0.7s linear infinite alternate forwards;
-}
-
-@keyframes loaderAnim {
-	to {
-		opacity: 1;
-		transform: scale3d(0.5,0.5,1);
-	}
-}
-
-/******************+ Links *************************/
-a {
-	text-decoration: none;
-	color: var(--color-link);
-	outline: none;
-	cursor: pointer;
-}
-
-a:hover {
-	color: var(--color-link-hover);
-	outline: none;
-}
-
-a:focus {
-	outline: none;
-	background: lightgrey;
-}
-
-a:focus:not(:focus-visible) {
-	background: transparent;
-}
-
-a:focus-visible {
-	outline: 2px solid red;
-	background: transparent;
-}
-
-.unbutton {
-	background: none;
-	border: 0;
-	padding: 0;
-	margin: 0;
-	font: inherit;
-	cursor: pointer;
-}
-
-.unbutton:focus {
-	outline: none;
-}
-
-body #cdawrap {
-    justify-self: start;
 }
 
 /******************+ Intro *************************/
@@ -169,38 +71,26 @@ body #cdawrap {
     text-align: center;
     place-items: center;
     display: grid;
-    margin-bottom: 30vh;
-    background: linear-gradient(0deg, transparent, var(--color-bg-alt));
+    margin-bottom: 3vh;
 }
 
 .intro__title {
     place-items: center;
     margin: 0;
-    line-height: .9;
     display: grid;
     margin-top: 15vh;
     font-weight: 400;
 }
 
-.intro__title-pre {
-	font-family: var(--font-body);
-	font-variation-settings: "wdth" 140, "wght" 300;
-	font-weight: 300;
-    font-size: clamp(2rem,10vw,5rem);
-    color: var(--color-title);
-}
-
 .intro__title-sub {
-    font-size: 1.5rem;
     margin: 1rem 0;
 }
 
 .intro__info {
 	max-width: 15ch;
-    opacity: .6;
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
     padding-bottom: 1rem;
-    line-height: 1.2;
+    line-height: 1;
     position: relative;
     align-self: end;
 }
@@ -209,17 +99,13 @@ body #cdawrap {
 	content: "";
 	width: 1px;
 	height: 2rem;
-	background: #fff;
+	background: black;
 	position: absolute;
 	top: 100%;
 	left: 50%;
 }
 
 /******************+ Content *************************/
-
-.content__title {
-	margin-top: 40vh;
-}
 
 .content-wrap {
 	display: grid;
@@ -231,7 +117,7 @@ body #cdawrap {
 	grid-area: main;
 	display: grid;	
 	place-items: center;
-	line-height: 1.2;
+	line-height: 1;
 	grid-template-areas: 'content';
 }
 
@@ -249,7 +135,7 @@ body #cdawrap {
 
 .content__img {
 	grid-area: img;
-	max-width: 50%;
+	max-width: 70%;
 	height: auto;
 }
 
@@ -265,33 +151,27 @@ body #cdawrap {
 }
 
 .title {
-	padding-top: 0.3em;
+	padding-top: 0em;
 	line-height: 0.525;
-	font-size: 2rem;
-	font-family: "stinger-variable", sans-serif;
-	font-variation-settings: "wdth" 140, "wght" 150;
-	font-weight: 300;
+	font-weight: 500;
 	position: relative;
 	z-index: 100;
-	text-indent: -0.1em;
+	text-indent: 0em;
+	text-transform: uppercase;
 }
 
 .title--up {
-	grid-area: title-up;
-	font-style: italic;
-	
+	grid-area: title-up;	
 }
 
 .title--down {
 	grid-area: title-down;
-	font-variation-settings: "wdth" 140, "wght" 350;
 }
 
 .content__text {
 	grid-area: text;
 	text-transform: uppercase;
-	margin: 0;
-	opacity: 0.5;
+	line-height: 1.2;
 }
 
 /******************+ Responsivness *************************/
@@ -299,7 +179,7 @@ body #cdawrap {
 @media screen and (min-width: 53em) {
 
 	.title {
-		font-size: clamp(2rem,15vw,9rem);
+		font-size: clamp(1rem,10vw,9rem);
 	}
 
 	.content-wrap:not(:last-child) {
@@ -322,7 +202,7 @@ body #cdawrap {
 							  'text img title-down';
 		grid-template-columns: 30% auto 30%;
 		grid-template-rows: 1fr 1fr;
-		column-gap: 2vw;
+		column-gap: 1.5vw;
 	}
 	
 	.title--up {
