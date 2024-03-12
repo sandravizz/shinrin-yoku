@@ -7,7 +7,7 @@
 </svelte:head>
 
 <section>
-	<div style="background-image: url(1.JPG);">
+	<div>
 	<h1>SHINRIN-YOKU 森林浴</h1>
 	<h2>Mindfullness meets nature in Lisbon</h2>
 	</div>

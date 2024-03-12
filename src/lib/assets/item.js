@@ -33,6 +33,7 @@ export class Item {
      * Sets up the necessary elements and data for an Item instance.
      * @param {HTMLElement} DOM_el - The DOM element that represents the item.
      */
+    
     constructor(DOM_el) {
         // Assign DOM elements
         this.DOM.el = DOM_el;
@@ -74,7 +75,6 @@ export class Item {
             filter: 'brightness(150%)'
         }, 0);
         
-
         ScrollTrigger.create({
             trigger: this.DOM.titleWrap,
             ease: 'none',

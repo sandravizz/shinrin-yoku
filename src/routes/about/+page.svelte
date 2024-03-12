@@ -20,10 +20,7 @@
 <body>
 	
 		<div class="intro"> 
-			<h1 class="intro__title"> 
-				<h1 class="intro__title-pre">Vocabulary</h1> 
-				<h2 class="intro__title-sub">What to look for in a forest bathing.</h2> 
-			</h1> 
+				<h3 class="intro__title">What to look for in a forest bathing.</h3> 
 			<span class="intro__info">Scroll down.</span> 
 		</div>
 
@@ -78,12 +75,6 @@
     place-items: center;
     margin: 0;
     display: grid;
-    margin-top: 15vh;
-    font-weight: 400;
-}
-
-.intro__title-sub {
-    margin: 1rem 0;
 }
 
 .intro__info {

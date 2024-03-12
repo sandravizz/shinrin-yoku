@@ -9,9 +9,9 @@
 <ul>
     {#each events as d}
         <h4>{d.name} </h4>
-        <p>When: {d.local_date} </p>
-        <p>Signed up: {d.yes_rsvp_count} </p>
-        <p>To sign up click <a href={d.link}>here</a></p>
+        <h5>When: {d.local_date} </h5>
+        <h5>Signed up: {d.yes_rsvp_count} </h5>
+        <h5>To sign up click <a href={d.link}>here</a></h5>
     {/each}
 </ul>
 
