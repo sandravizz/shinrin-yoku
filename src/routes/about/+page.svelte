@@ -1,6 +1,5 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import aboutImage from "$lib/assets/aboutImage.jpg";
   import { Item } from "$lib/assets/item.js";
   import { initSmoothScrolling } from "$lib/assets/index.js";
 
@@ -71,7 +70,7 @@
           </mask>
         </defs>
         <image
-          xlink:href={aboutImage}
+          xlink:href="/aboutImage.jpg"
           width="896"
           height="1344"
           mask="url(#circleMask)"
